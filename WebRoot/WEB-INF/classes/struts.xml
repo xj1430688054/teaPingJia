@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+        </global-results>
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        
+        
+        <action name="stuAdd" class="stuAction" method="stuAdd">
+        </action>
+        <action name="stuDel" class="stuAction" method="stuDel">
+        </action>
+        <action name="stuMana" class="stuAction" method="stuMana">
+            <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        <action name="stuSearch" class="stuAction" method="stuSearch">
+            <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        <action name="stuEditPre" class="stuAction" method="stuEditPre">
+            <result name="success">/admin/stu/stuEditPre.jsp</result>
+        </action>
+        <action name="stuEdit" class="stuAction" method="stuEdit">
+        </action>
+        <action name="stuEditByMe" class="stuAction" method="stuEditByMe">
+        </action>
+        
+        
+        
+        
+        
+        <action name="teaAdd" class="teaAction" method="teaAdd">
+        </action>
+        <action name="teaDel" class="teaAction" method="teaDel">
+        </action>
+        <action name="teaMana" class="teaAction" method="teaMana">
+            <result name="success">/admin/tea/teaMana.jsp</result>
+        </action>
+        <action name="teaSearch" class="teaAction" method="teaSearch">
+            <result name="success">/admin/tea/teaMana.jsp</result>
+        </action>
+        <action name="teaAll1" class="teaAction" method="teaAll">
+            <result name="success">/admin/tea/teaAll1.jsp</result>
+        </action>
+        <action name="teaAll" class="teaAction" method="teaAll">
+            <result name="success">/astu/tea/teaAll.jsp</result>
+        </action>
+        <action name="teaEdit" class="teaAction" method="teaEdit">
+        </action>
+        
+        
+        
+        <action name="yijizhibiaoAdd" class="yijizhibiaoAction" method="yijizhibiaoAdd">
+        </action>
+        <action name="yijizhibiaoMana" class="yijizhibiaoAction" method="yijizhibiaoMana">
+            <result name="success">/admin/yijizhibiao/yijizhibiaoMana.jsp</result>
+        </action>
+        <action name="yijizhibiaoDel" class="yijizhibiaoAction" method="yijizhibiaoDel">
+        </action>
+        <action name="yijizhibiaoEditPre" class="yijizhibiaoAction" method="yijizhibiaoEditPre">
+            <result name="success">/admin/yijizhibiao/yijizhibiaoEditPre.jsp</result>
+        </action>
+        <action name="yijizhibiaoEdit" class="yijizhibiaoAction" method="yijizhibiaoEdit">
+        </action>
+        <action name="yijizhibiaoAll" class="yijizhibiaoAction" method="yijizhibiaoAll">
+            <result name="success">/astu/yijizhibiao/yijizhibiaoAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="erjizhibiaoAdd" class="erjizhibiaoAction" method="erjizhibiaoAdd">
+        </action>
+        <action name="erjizhibiaoDel" class="erjizhibiaoAction" method="erjizhibiaoDel">
+        </action>
+        <action name="erjizhibiaoMana" class="erjizhibiaoAction" method="erjizhibiaoMana">
+            <result name="success">/admin/erjizhibiao/erjizhibiaoMana.jsp</result>
+        </action>
+        <action name="erjizhibiaoEditPre" class="erjizhibiaoAction" method="erjizhibiaoEditPre">
+            <result name="success">/admin/erjizhibiao/erjizhibiaoEditPre.jsp</result>
+        </action>
+        <action name="erjizhibiaoEdit" class="erjizhibiaoAction" method="erjizhibiaoEdit">
+        </action>
+        
+        
+        
+        <action name="pingFenAdd" class="pingFenAction" method="pingFenAdd">
+        </action>
+        <action name="pingFenMy" class="pingFenAction" method="pingFenMy">
+            <result name="success">/atea/fenshu/pingFenMy.jsp</result>
+        </action>
+        <action name="pingfenTea" class="pingFenAction" method="pingfenTea">
+            <result name="success">/admin/fenshu/pingfenTea.jsp</result>
+        </action>
+        <action name="pingfenDetail" class="pingFenAction" method="pingfenDetail">
+            <result name="success">/admin/fenshu/pingfenDetail.jsp</result>
+        </action>
+    </package>
+</struts>
